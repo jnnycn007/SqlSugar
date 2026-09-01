@@ -1476,7 +1476,7 @@ namespace SqlSugar
         }
         public Task<int> ExecuteCommandAsync(string sql, object parameters, CancellationToken cancellationToken) 
         {
-            this.CancellationToken = CancellationToken;
+            this.CancellationToken = cancellationToken;
             return ExecuteCommandAsync(sql,parameters);
         }
         public virtual Task<int> ExecuteCommandAsync(string sql, object parameters)
