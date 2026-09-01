@@ -11,7 +11,10 @@ namespace SqlSugar.GBase
 {
     public class GBaseProvider : AdoProvider
     {
-        public GBaseProvider() { }
+        public GBaseProvider() 
+        {
+            this.IsOpenAsync = true;
+        }
         public override IDbConnection Connection
         {
             get

@@ -32,7 +32,7 @@ namespace SqlSugar
 
         #region Properties
         public virtual bool IsNoSql { get; set; }
-        internal bool IsOpenAsync { get; set; }
+        protected bool IsOpenAsync { get; set; }
         protected List<IDataParameter> OutputParameters { get; set; }
         public virtual string SqlParameterKeyWord { get { return "@"; } }
         public IDbTransaction Transaction { get; set; }
