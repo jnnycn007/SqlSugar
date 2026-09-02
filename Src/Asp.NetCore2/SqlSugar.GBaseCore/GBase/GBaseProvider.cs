@@ -324,7 +324,7 @@ namespace SqlSugar.GBase
             }
             else
             {
-                return base.ExecuteCommand(sql, parameters);
+                return await base.ExecuteCommandAsync(sql, parameters);
             }
         }
 
